@@ -1,0 +1,121 @@
+/* Hero Section with Background Image */
+.portfolio-hero {
+    background-image: url('photos/1.avif'); 
+    background-color: rgba(0, 0, 0, 0.2); 
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Portfolio Titles */
+.portfolio-title {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Portfolio Images */
+.portfolio-image-wrapper {
+    width: 100%;
+    height: 600px;
+    /* Tamanho fixo para todas as imagens */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    /* Cor de fundo para contraste caso a imagem não cubra 100% */
+}
+
+.portfolio-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Garante o preenchimento uniforme */
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-image-wrapper img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 1.5rem 0;
+  }
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between; /* Para garantir que as colunas fiquem alinhadas de forma proporcional */
+    align-items: center; /* Para garantir que as colunas estejam todas no mesmo eixo vertical */
+    width: 100%;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: flex-end; /* Alinha os ícones à direita */
+    gap: 15px; /* Espaçamento entre os ícones */
+}
+
+footer .social-icons svg {
+    width: 24px;
+    height: 24px;
+}
+
+footer .col-md-4 {
+    flex: 1;
+    padding: 10px;
+}
+
+
+footer .text-left {
+    text-align: left;
+}
+
+footer .text-right {
+    text-align: right;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.see-more-btn {
+    margin-bottom: 100px;  /* Ajuste o valor conforme necessário */
+}
+
+.see-more-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-logo-rounded {
+    width: 300px; /* Ajuste o tamanho da imagem */
+    height: 280px; /* Mesma altura para ser um círculo */
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover; /* Garante que a imagem se ajuste ao círculo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona um leve sombreamento */
+}
