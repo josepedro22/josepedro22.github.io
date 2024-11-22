@@ -13,7 +13,18 @@
 /* Portfolio Titles */
 .portfolio-title {
     text-align: center;
-    margin: 2rem 0;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+}
+
+.portfolio-title2 {
+    text-align: center;
+    margin-top: 60px;
+    color: #863d3d;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
 }
 
 /* Portfolio Images */
@@ -120,7 +131,7 @@ footer .text-right {
 }
 
 #see-more-btn:hover {
-    background-color: #0056b3; /* Cor de fundo mais escura no hover */
+    background-color: #863d3d; /* Cor de fundo mais escura no hover */
     transform: scale(1.05); /* Efeito de leve aumento */
 }
 

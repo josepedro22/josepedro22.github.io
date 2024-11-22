@@ -52,4 +52,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Atualiza a galeria ao redimensionar a janela
     window.addEventListener('resize', initializeGallery);
+
+    // Armazena o estado no localStorage para manter após recarregamento
+    localStorage.setItem('images-visible', imagesToShow);
+
 });
