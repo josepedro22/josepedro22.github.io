@@ -48,6 +48,4 @@ document.addEventListener('DOMContentLoaded', function () {
     // Inicializa a galeria ao carregar
     initializeGallery();
 
-    // Atualiza a galeria ao redimensionar a janela
-    window.addEventListener('resize', initializeGallery);
 });
