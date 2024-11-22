@@ -103,24 +103,51 @@ footer .text-right {
     text-align: right;
 }
 
-html {
-    scroll-behavior: smooth;
+
+/* Estilo do botão "See More" */
+#see-more-btn {
+    background-color: #863d3d; /* Cor de fundo azul (pode ser alterada) */
+    color: white; /* Texto branco */
+    border: none; /* Sem bordas */
+    padding: 10px 20px; /* Tamanho do botão */
+    border-radius: 25px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Cursor em forma de mão */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leve sombra */
+    margin-bottom: 20px;
 }
 
-.see-more-btn {
-    margin-bottom: 100px;  /* Ajuste o valor conforme necessário */
+#see-more-btn:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura no hover */
+    transform: scale(1.05); /* Efeito de leve aumento */
 }
 
-.see-more-btn:hover {
-    background-color: var(--accent-color);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
+/* Oculta o botão quando não for necessário (controle feito pelo JS) */
+#see-more-btn.hidden {
+    display: none;
 }
 
 .footer-logo-rounded {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     width: 300px; /* Ajuste o tamanho da imagem */
     height: 280px; /* Mesma altura para ser um círculo */
     border-radius: 50%; /* Torna a imagem redonda */
     object-fit: cover; /* Garante que a imagem se ajuste ao círculo */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona um leve sombreamento */
 }
+
+/* Adiciona margens consistentes para imagens */
+.image-item img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de hover nas imagens */
+.image-item img:hover {
+    transform: scale(1.05);
+}
+
