@@ -45,7 +45,7 @@
 
 @media (max-width: 768px) {
     .portfolio-image-wrapper {
-        height: 100px; /* Ajuste para uma altura menor */
+        height: 200px; /* Ajuste para uma altura menor */
     }
 }
 
