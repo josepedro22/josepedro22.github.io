@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Atualiza a exibição das imagens
     function updateImageVisibility() {
-        // Exibe apenas as imagens visíveis
         images.forEach((image, index) => {
             image.style.display = index < visibleImages ? 'block' : 'none';
         });
@@ -30,18 +29,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Lógica para carregar mais imagens ao clicar no botão
     function loadMoreImages() {
-        if (window.innerWidth > 768) {
-            visibleImages += desktopIncrement; // Adiciona mais 3 imagens no desktop
-        } else {
-            visibleImages = images.length; // Mostra todas as imagens no mobile
-        }
+        const increment = window.innerWidth > 768 ? desktopIncrement : images.length; // Incremento no desktop ou tudo no mobile
+        visibleImages = Math.min(visibleImages + increment, images.length); // Garante que não exceda o total de imagens
         updateImageVisibility();
     }
 
     // Inicializa a exibição das imagens ao carregar a página
     function initializeGallery() {
-        visibleImages = getInitialCount(); // Define o número inicial de imagens
-        updateImageVisibility(); // Atualiza a visibilidade das imagens
+        // Mantém o estado de imagens visíveis se já houver imagens carregadas
+        const initialCount = getInitialCount();
+        visibleImages = Math.max(visibleImages, initialCount); // Garante que não diminua as imagens visíveis
+        updateImageVisibility();
     }
 
     // Evento de clique no botão "See More"
@@ -52,8 +50,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Atualiza a galeria ao redimensionar a janela
     window.addEventListener('resize', initializeGallery);
-
-    // Armazena o estado no localStorage para manter após recarregamento
-    localStorage.setItem('images-visible', imagesToShow);
-
 });
