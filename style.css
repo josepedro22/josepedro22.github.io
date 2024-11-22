@@ -1,6 +1,81 @@
+/*Navbar*/
+.nav-link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.navbar .nav-link.active {
+    color: #863d3d;
+    font-weight: bold;
+    /* Define a cor para o link ativo */
+}
+
+.nav-link:hover {
+    color: #863d3d7e;
+    /* Tom mais claro no hover */
+}
+
+@media (max-width: 768px) {
+    .nav-link{
+        margin-left: 50px;
+    }
+}
+
+.navbar {
+    background-image: url('photos/background.avif');
+    /* Caminho para sua imagem */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: repeat;
+    /* Impede a repetição da imagem */
+    height: 90px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-image: url('photos/background1.jpg');
+        /* Mesmo fundo */
+        background-size: cover;
+        /* Faz a imagem cobrir todo o elemento */
+        background-position: center;
+        /* Centraliza a imagem */
+        background-repeat: no-repeat;
+        /* Evita repetição */
+        width: 100%;
+        /* Garante largura total */
+        max-height: 100vh;
+        /* Garante altura total no dispositivo móvel */
+        overflow-y: auto;
+        /* Permite rolagem do menu colapsado */
+    }
+}
+
+.navbar-brand {
+    padding-left: 150px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand{
+        padding-left: 20px;
+    }
+}
+
+.navbar-nav {
+    padding-right: 150px;
+}
+
+
+
 /* Hero Section with Background Image */
 .portfolio-hero {
-    background-image: url('photos/1.avif'); 
+    background-image: url('photos/1.avif');
     background-size: cover;
     background-position: center;
     height: 700px;
@@ -9,20 +84,22 @@
     z-index: 1;
     overflow: hidden;
 }
+
 .portfolio-hero h1 {
-    font-size: 60px; /* Tamanho da fonte */
+    font-size: 60px;
+    /* Tamanho da fonte */
     text-align: center;
     margin-top: 0;
     padding-top: 30px;
     color: white;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
-    position: relative; 
+    position: relative;
 }
 
 .portfolio-title3 {
-    font-size: 20px; /* Tamanho da fonte */
+    font-size: 20px;
+    /* Tamanho da fonte */
     color: black;
-
     text-align: center;
     margin-top: 0;
     padding-top: 0px;
@@ -31,6 +108,16 @@
     padding-right: 300px;
 }
 
+@media (max-width: 768px) {
+    .portfolio-title3 {
+        font-size: 10px;
+        font-weight: 700;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+
 .portfolio-hero::before {
     content: '';
     position: absolute;
@@ -38,8 +125,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.4); /* Overlay branco translúcido */
-    z-index: 0; /* Coloca o overlay atrás do conteúdo */
+    background: rgba(255, 255, 255, 0.4);
+    /* Overlay branco translúcido */
+    z-index: 0;
+    /* Coloca o overlay atrás do conteúdo */
 }
 
 /* Portfolio Titles */
@@ -88,7 +177,8 @@
 
 @media (max-width: 768px) {
     .portfolio-image-wrapper {
-        height: 200px; /* Ajuste para uma altura menor */
+        height: 200px;
+        /* Ajuste para uma altura menor */
     }
 }
 
@@ -98,7 +188,7 @@ footer {
     background-color: #343a40;
     color: white;
     padding: 1.5rem 0;
-  }
+}
 
 footer a {
     color: white;
@@ -116,15 +206,19 @@ footer .container {
 
 footer .row {
     display: flex;
-    justify-content: space-between; /* Para garantir que as colunas fiquem alinhadas de forma proporcional */
-    align-items: center; /* Para garantir que as colunas estejam todas no mesmo eixo vertical */
+    justify-content: space-between;
+    /* Para garantir que as colunas fiquem alinhadas de forma proporcional */
+    align-items: center;
+    /* Para garantir que as colunas estejam todas no mesmo eixo vertical */
     width: 100%;
 }
 
 footer .social-icons {
     display: flex;
-    justify-content: flex-end; /* Alinha os ícones à direita */
-    gap: 15px; /* Espaçamento entre os ícones */
+    justify-content: flex-end;
+    /* Alinha os ícones à direita */
+    gap: 15px;
+    /* Espaçamento entre os ícones */
 }
 
 footer .social-icons svg {
@@ -149,22 +243,33 @@ footer .text-right {
 
 /* Estilo do botão "See More" */
 #see-more-btn {
-    background-color: #863d3d; /* Cor de fundo azul (pode ser alterada) */
-    color: white; /* Texto branco */
-    border: none; /* Sem bordas */
-    padding: 10px 20px; /* Tamanho do botão */
-    border-radius: 25px; /* Bordas arredondadas */
-    font-size: 16px; /* Tamanho do texto */
-    font-weight: bold; /* Texto em negrito */
-    cursor: pointer; /* Cursor em forma de mão */
+    background-color: #863d3d;
+    /* Cor de fundo azul (pode ser alterada) */
+    color: white;
+    /* Texto branco */
+    border: none;
+    /* Sem bordas */
+    padding: 10px 20px;
+    /* Tamanho do botão */
+    border-radius: 25px;
+    /* Bordas arredondadas */
+    font-size: 16px;
+    /* Tamanho do texto */
+    font-weight: bold;
+    /* Texto em negrito */
+    cursor: pointer;
+    /* Cursor em forma de mão */
     transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leve sombra */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Leve sombra */
     margin-bottom: 20px;
 }
 
 #see-more-btn:hover {
-    background-color: #863d3d; /* Cor de fundo mais escura no hover */
-    transform: scale(1.05); /* Efeito de leve aumento */
+    background-color: #863d3d;
+    /* Cor de fundo mais escura no hover */
+    transform: scale(1.05);
+    /* Efeito de leve aumento */
 }
 
 /* Oculta o botão quando não for necessário (controle feito pelo JS) */
@@ -176,11 +281,25 @@ footer .text-right {
     width: 100%;
     max-width: 300px;
     height: auto;
-    width: 300px; /* Ajuste o tamanho da imagem */
-    height: 280px; /* Mesma altura para ser um círculo */
-    border-radius: 50%; /* Torna a imagem redonda */
-    object-fit: cover; /* Garante que a imagem se ajuste ao círculo */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona um leve sombreamento */
+    width: 300px;
+    /* Ajuste o tamanho da imagem */
+    height: 280px;
+    /* Mesma altura para ser um círculo */
+    border-radius: 50%;
+    /* Torna a imagem redonda */
+    object-fit: cover;
+    /* Garante que a imagem se ajuste ao círculo */
+    margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+    .footer-logo-rounded {
+        margin-left: 70px;
+        width: 200px;
+        /* Ajuste o tamanho da imagem */
+        height: 180px;
+        /* Mesma altura para ser um círculo */
+    }
 }
 
 /* Adiciona margens consistentes para imagens */
@@ -194,3 +313,39 @@ footer .text-right {
     transform: scale(1.05);
 }
 
+.footer-col-1 {
+    margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+    .footer-col-1 {
+        margin-left: 20px;
+    }
+}
+
+.footer-col-2 {
+    margin-left: 70px;
+}
+
+@media (max-width: 768px) {
+    .footer-col-2 {
+        margin-left: 20px;
+    }
+}
+
+.footer-col-3 {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-col-3 {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-rights {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+}
