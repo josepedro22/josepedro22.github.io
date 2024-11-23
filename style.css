@@ -442,3 +442,122 @@ footer .text-right {
         font-size: 12px; /* Tamanho do texto reduzido para dispositivos móveis */
     }
 }
+
+
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Ajustes da coluna do título */
+  .header-content {
+    display: flex;
+    flex-direction: column; /* Alinha itens na vertical */
+    justify-content: flex-start; /* Garante alinhamento ao topo */
+    height: 100%; /* Ocupa toda a altura do container */
+  }
+  
+  .section-subtitle {
+    color: #863d3d;
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-title {
+    font-family: 'Jost', sans-serif;
+    color: #333;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  
+  .testimonial-image-container {
+    flex-shrink: 0; /* Garante que a imagem mantenha seu tamanho */
+  }
+  
+  .testimonial-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial-text {
+    text-align: left;
+    font-size: 1.125rem;
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.75;
+  }
+  
+  .testimonial-name {
+    text-align: left;
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-text {
+      font-size: 0.85rem;
+    }
+    .section-title {
+      font-size: 36px;
+    }
+  }
+
+  /*
+  .testimonial-text::before, .testimonial-text::after {
+    content: '"';
+    font-size: 2rem;
+    color: #863d3d;
+    vertical-align: top;
+    margin-right: 5px;
+  }
+*/
+
+.testimonial-card {
+    min-height: 400px; /* Altura mínima */
+    max-height: 400px; /* Altura fixa */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+  }
+
+
+
+/* Centralizar os botões de controle */
+.testimonial-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .testimonial-controls button {
+    font-size: 1.5rem;
+    color: #863d3d;
+    background: none; /* Remove fundo */
+    border: none; /* Remove borda */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .testimonial-controls button:hover {
+    color: white;
+  }
+
+  .vazio {
+    height: 500px;
+  }
+  
+  
+  
