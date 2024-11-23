@@ -51,10 +51,184 @@
     <div class="header">
         <div class="portfolio-hero text-center d-flex flex-column justify-content-center align-items-center">
             <h1 class="portfolio-title">Contact Us</h1>
-            <p class="portfolio-title3">Discover our passion for beautifully decorated, homemade cakes, crafted with
-                care and attention to every detail. In our portfolio, we showcase a variety of unique creations that
-                blend delicious flavors with irresistible aesthetics.</p>
         </div>
+    </div>
+
+
+    <!-- Forms Section -->
+    <div class="container mt-5">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+                <label for="validationCustom01" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Insert your first name" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Insert your last name" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">Email</label>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="Insert your email" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom04" class="form-label">Mobile Phone</label>
+                <input type="text" class="form-control" id="validationCustom04" placeholder="Insert your mobile phone" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom05" class="form-label">Date</label>
+                <input type="date" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                    Please provide a valid date.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom06" class="form-label">Event Type</label>
+                <select class="form-select" id="validationCustom06" required>
+                    <option selected disabled value="">Wedding/ Birthday/ Party</option>
+                    <option>Wedding</option>
+                    <option>Birthday</option>
+                    <option>Baptism</option>
+                    <option>Another</option>
+                </select>
+                <div class="invalid-feedback">
+                    Select an option
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom07" class="form-label">Number of people to serve</label>
+                <input type="number" class="form-control" id="validationCustom07" required min="15" value="15">
+                <div class="invalid-feedback">
+                    Please provide a valid zip.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom08" class="form-label">Event Location</label>
+                <input type="text" class="form-control" id="validationCustom08" placeholder="Insert the event location" required>
+                <div class="invalid-feedback">
+                    Please provide a valid Location.
+                </div>
+            </div>
+            <legend class="col-form-label mt-5">Select an option</legend>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Dellivery
+                    <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-text">
+                            Delivery is subject to availability and costs €0.40/km + tolls (return journey).
+                        </span>
+                    </div>
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Collection
+                    <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-text">
+                            Collection is made in Guimarães (the address will be sent later).
+                        </span>
+                    </div>
+                </label>
+            </div>
+            <legend class="col-form-label mt-5">Theme/ Decoration</legend>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px" required></textarea>
+                <label for="floatingTextarea2">Tell us what you like and want, colours, patterns...</label>
+            </div>
+            <div class="col-md-4 mt-5">
+                <label for="validationCustom09" class="form-label">Attach an inspirational image</label>
+                <input type="file" class="form-control" id="validationCustom09" required>
+            </div>
+            <p class="note-contact-us">A list of combinations / flavours will then be sent to your email address so that
+                you can choose the flavour of the cake.
+            </p>
+
+            <legend class="col-form-label mt-5">Complements for your party.</legend>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    Decorated Biscuits
+                    <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-text">
+                            8 unit | 20€
+                        </span>
+                    </div>
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                    Brigadiers
+                    <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-text">
+                            12 unit | 18€
+                        </span>
+                    </div>
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                <label class="form-check-label" for="defaultCheck2">
+                    Cake Pops
+                    <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-text">
+                            8 unit | 20€
+                        </span>
+                    </div>
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                <label class="form-check-label" for="defaultCheck2">
+                    Cupcakes
+                    <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-text">
+                            6 unit | 18€
+                        </span>
+                    </div>
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                    Macarons
+                    <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-text">
+                            no minimum quantity | 1,5€
+                        </span>
+                    </div>
+                </label>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check mt-5">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="request-quote-btn btn-primary" type="submit">Request a quote</button>
+            </div>
+        </form>
     </div>
 
 
@@ -125,7 +299,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Inclui o arquivo JavaScript -->
-    <script src="script.js"></script>
+    <script src="contact_us.js"></script>
 
 </body>
 

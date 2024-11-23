@@ -388,3 +388,52 @@ footer .text-right {
     color: white; /* Botão de fechar visível em fundos escuros */
     font-size: 1.5rem; /* Ajusta tamanho do botão */
 }
+
+
+/* --------------------------------------Contact Us----------------------------------*/
+
+.note-contact-us {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form-label {
+    color: #863d3d;
+}
+
+.col-form-label {
+    color: #863d3d;
+}
+
+.request-quote-btn {
+    background-color: #863d3d;
+    /* Cor de fundo azul (pode ser alterada) */
+    color: white;
+    /* Texto branco */
+    border: none;
+    /* Sem bordas */
+    padding: 10px 20px;
+    /* Tamanho do botão */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    font-size: 16px;
+    /* Tamanho do texto */
+    font-weight: bold;
+    /* Texto em negrito */
+    cursor: pointer;
+    /* Cursor em forma de mão */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Leve sombra */
+    margin-bottom: 20px;
+}
+
+#request-quote-btn:hover {
+    background-color: #863d3d;
+    /* Cor de fundo mais escura no hover */
+    transform: scale(1.05);
+    /* Efeito de leve aumento */
+}
+
