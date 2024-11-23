@@ -295,10 +295,24 @@ footer .text-right {
 @media (max-width: 768px) {
     .footer-logo-rounded {
         margin-left: 70px;
-        width: 200px;
+        width: 150px;
         /* Ajuste o tamanho da imagem */
-        height: 180px;
+        height: 130px;
         /* Mesma altura para ser um círculo */
+    }
+}
+
+@media (max-width: 1199px) {
+    .footer-logo-rounded {
+        display: block;
+        margin: 0 auto; /* Centraliza horizontalmente */
+        margin-top: 20px; /* Espaço opcional acima do logo */
+    }
+
+    .footer-col-1, 
+    .footer-col-2, 
+    .footer-col-3 {
+        text-align: center; /* Alinha o texto ao centro para consistência */
     }
 }
 
@@ -349,3 +363,4 @@ footer .text-right {
         padding-left: 10px;
     }
 }
+
