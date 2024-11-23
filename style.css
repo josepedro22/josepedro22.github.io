@@ -437,3 +437,8 @@ footer .text-right {
     /* Efeito de leve aumento */
 }
 
+@media (max-width: 768px) { /* Para telas menores ou iguais a 768px */
+    label[for="floatingTextarea2"] {
+        font-size: 12px; /* Tamanho do texto reduzido para dispositivos móveis */
+    }
+}
