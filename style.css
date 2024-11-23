@@ -74,7 +74,7 @@
 
 
 
-/* Hero Section with Background Image */
+/*---------------- Hero Section with Background Image---------------- */
 .portfolio-hero {
     background-image: url('photos/1.avif');
     background-size: cover;
@@ -183,6 +183,51 @@
     }
 }
 
+/* Adiciona margens consistentes para imagens */
+.image-item img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+
+
+/*---------------- Estilo do botão "See More"----------------- */
+#see-more-btn {
+    background-color: #863d3d;
+    /* Cor de fundo azul (pode ser alterada) */
+    color: white;
+    /* Texto branco */
+    border: none;
+    /* Sem bordas */
+    padding: 10px 20px;
+    /* Tamanho do botão */
+    border-radius: 25px;
+    /* Bordas arredondadas */
+    font-size: 16px;
+    /* Tamanho do texto */
+    font-weight: bold;
+    /* Texto em negrito */
+    cursor: pointer;
+    /* Cursor em forma de mão */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Leve sombra */
+    margin-bottom: 20px;
+}
+
+#see-more-btn:hover {
+    background-color: #863d3d;
+    /* Cor de fundo mais escura no hover */
+    transform: scale(1.05);
+    /* Efeito de leve aumento */
+}
+
+/* Oculta o botão quando não for necessário (controle feito pelo JS) */
+#see-more-btn.hidden {
+    display: none;
+}
+
+
 
 /* Footer */
 footer {
@@ -242,41 +287,7 @@ footer .text-right {
 }
 
 
-/* Estilo do botão "See More" */
-#see-more-btn {
-    background-color: #863d3d;
-    /* Cor de fundo azul (pode ser alterada) */
-    color: white;
-    /* Texto branco */
-    border: none;
-    /* Sem bordas */
-    padding: 10px 20px;
-    /* Tamanho do botão */
-    border-radius: 25px;
-    /* Bordas arredondadas */
-    font-size: 16px;
-    /* Tamanho do texto */
-    font-weight: bold;
-    /* Texto em negrito */
-    cursor: pointer;
-    /* Cursor em forma de mão */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Leve sombra */
-    margin-bottom: 20px;
-}
 
-#see-more-btn:hover {
-    background-color: #863d3d;
-    /* Cor de fundo mais escura no hover */
-    transform: scale(1.05);
-    /* Efeito de leve aumento */
-}
-
-/* Oculta o botão quando não for necessário (controle feito pelo JS) */
-#see-more-btn.hidden {
-    display: none;
-}
 
 .footer-logo-rounded {
     width: 100%;
@@ -317,11 +328,7 @@ footer .text-right {
     }
 }
 
-/* Adiciona margens consistentes para imagens */
-.image-item img {
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
+
 
 /* Efeito de hover nas imagens */
 .image-item img:hover {
