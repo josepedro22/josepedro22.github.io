@@ -49,3 +49,12 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeGallery();
 
 });
+
+document.querySelectorAll('.portfolio-image-wrapper img').forEach(image => {
+    image.addEventListener('click', function () {
+        const modalImage = document.getElementById('modalImage');
+        modalImage.src = this.src; // Define a imagem do modal como a imagem clicada
+        const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+        imageModal.show(); // Mostra o modal
+    });
+});
