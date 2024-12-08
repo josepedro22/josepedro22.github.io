@@ -218,7 +218,7 @@
 }
 
 #see-more-btn:hover {
-    background-color: #863d3d;
+    background-color: #863d3d8d;
     /* Cor de fundo mais escura no hover */
     transform: scale(1.05);
     /* Efeito de leve aumento */
@@ -433,7 +433,7 @@ footer .text-right {
 }
 
 #request-quote-btn:hover {
-    background-color: #863d3d;
+    background-color: #863d3d4d;
     /* Cor de fundo mais escura no hover */
     transform: scale(1.05);
     /* Efeito de leve aumento */

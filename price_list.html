@@ -14,14 +14,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <link href="./css/dataTables.bootstrap5.css" rel="stylesheet">
-    
 
 
-    <script src="jquery-3.7.1.js"></script>
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="dataTables.js"></script>
 
-    <script src="dataTables.bootstrap5.js"></script>
+    <script src="./js_table/jquery-3.7.1.js"></script>
+    <script src="./js_table/bootstrap.bundle.min.js"></script>
+    <script src="./js_table/dataTables.js"></script>
+
+    <script src="./js_table/dataTables.bootstrap5.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -35,7 +35,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="home.html">
             <img src="photos/logo.png" alt="Logo" width="50" height="80" class="d-inline-block align-text-top">
         </a>
         <button class="navbar-toggler mx-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -86,380 +86,380 @@
             <div class="col">
                 <h6 class="portfolio-title2 text-center">Doçaria da Manu</h6>
                 <h1 class="portfolio-title text-center">Price List</h1>
-
-                <table id="example" class="table table-striped" style="width:100%">
-                    <thead>
-                        <tr>
-                            <th>Product</th>
-                            <th>Available Size</th>
-                            <th>Flavor</th>
-                            <th>Topping</th>
-                            <th>Price</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Customized Cake</td>
-                            <td>Small</td>
-                            <td>Chocolate</td>
-                            <td>Ganache</td>
-                            <td>€20</td>
-                        </tr>
-                        <tr>
-                            <td>Customized Cake</td>
-                            <td>Small</td>
-                            <td>Chocolate</td>
-                            <td>Buttercream</td>
-                            <td>€20</td>
-                        </tr>
-                        <tr>
-                            <td>Customized Cake</td>
-                            <td>Small</td>
-                            <td>Chocolate</td>
-                            <td>Whipped Cream</td>
-                            <td>€20</td>
-                        </tr>
-                        <tr>
-                            <td>Customized Cake</td>
-                            <td>Medium</td>
-                            <td>Vanilla</td>
-                            <td>Ganache</td>
-                            <td>€40</td>
-                        </tr>
-                        <tr>
-                            <td>Customized Cake</td>
-                            <td>Medium</td>
-                            <td>Vanilla</td>
-                            <td>Buttercream</td>
-                            <td>€40</td>
-                        </tr>
-                        <tr>
-                            <td>Customized Cake</td>
-                            <td>Medium</td>
-                            <td>Vanilla</td>
-                            <td>Whipped Cream</td>
-                            <td>€40</td>
-                        </tr>
-                        <tr>
-                            <td>Customized Cake</td>
-                            <td>Large</td>
-                            <td>Red Velvet</td>
-                            <td>Cream Cheese</td>
-                            <td>€60</td>
-                        </tr>
-                        <tr>
-                            <td>Customized Cake</td>
-                            <td>Large</td>
-                            <td>Red Velvet</td>
-                            <td>Ganache</td>
-                            <td>€60</td>
-                        </tr>
-                        <tr>
-                            <td>Customized Cake</td>
-                            <td>Large</td>
-                            <td>Red Velvet</td>
-                            <td>Buttercream</td>
-                            <td>€60</td>
-                        </tr>
-                        <tr>
-                            <td>Cupcake</td>
-                            <td>Box of 6</td>
-                            <td>Chocolate</td>
-                            <td>Whipped Cream</td>
-                            <td>€15</td>
-                        </tr>
-                        <tr>
-                            <td>Cupcake</td>
-                            <td>Box of 6</td>
-                            <td>Chocolate</td>
-                            <td>Ganache</td>
-                            <td>€15</td>
-                        </tr>
-                        <tr>
-                            <td>Cupcake</td>
-                            <td>Box of 6</td>
-                            <td>Chocolate</td>
-                            <td>Buttercream</td>
-                            <td>€15</td>
-                        </tr>
-                        <tr>
-                            <td>Cupcake</td>
-                            <td>Box of 12</td>
-                            <td>Vanilla</td>
-                            <td>Whipped Cream</td>
-                            <td>€25</td>
-                        </tr>
-                        <tr>
-                            <td>Cupcake</td>
-                            <td>Box of 12</td>
-                            <td>Vanilla</td>
-                            <td>Ganache</td>
-                            <td>€25</td>
-                        </tr>
-                        <tr>
-                            <td>Cupcake</td>
-                            <td>Box of 12</td>
-                            <td>Vanilla</td>
-                            <td>Buttercream</td>
-                            <td>€25</td>
-                        </tr>
-                        <tr>
-                            <td>Brigadiers</td>
-                            <td>Box of 12</td>
-                            <td>Chocolate</td>
-                            <td>Sprinkles</td>
-                            <td>€10</td>
-                        </tr>
-                        <tr>
-                            <td>Brigadiers</td>
-                            <td>Box of 12</td>
-                            <td>Chocolate</td>
-                            <td>Coconut Flakes</td>
-                            <td>€10</td>
-                        </tr>
-                        <tr>
-                            <td>Brigadiers</td>
-                            <td>Box of 12</td>
-                            <td>Chocolate</td>
-                            <td>Chocolate Chips</td>
-                            <td>€10</td>
-                        </tr>
-                        <tr>
-                            <td>Brigadiers</td>
-                            <td>Box of 24</td>
-                            <td>Vanilla</td>
-                            <td>Sprinkles</td>
-                            <td>€18</td>
-                        </tr>
-                        <tr>
-                            <td>Brigadiers</td>
-                            <td>Box of 24</td>
-                            <td>Vanilla</td>
-                            <td>Coconut Flakes</td>
-                            <td>€18</td>
-                        </tr>
-                        <tr>
-                            <td>Brigadiers</td>
-                            <td>Box of 24</td>
-                            <td>Vanilla</td>
-                            <td>Chocolate Chips</td>
-                            <td>€18</td>
-                        </tr>
-                        <tr>
-                            <td>Cake Pop</td>
-                            <td>Single</td>
-                            <td>Chocolate</td>
-                            <td>Sprinkles</td>
-                            <td>€2</td>
-                        </tr>
-                        <tr>
-                            <td>Cake Pop</td>
-                            <td>Single</td>
-                            <td>Chocolate</td>
-                            <td>White Chocolate Drizzle</td>
-                            <td>€2</td>
-                        </tr>
-                        <tr>
-                            <td>Cake Pop</td>
-                            <td>Single</td>
-                            <td>Chocolate</td>
-                            <td>Coconut Flakes</td>
-                            <td>€2</td>
-                        </tr>
-                        <tr>
-                            <td>Cake Pop</td>
-                            <td>Single</td>
-                            <td>Strawberry</td>
-                            <td>Sprinkles</td>
-                            <td>€2.5</td>
-                        </tr>
-                        <tr>
-                            <td>Cake Pop</td>
-                            <td>Single</td>
-                            <td>Strawberry</td>
-                            <td>White Chocolate Drizzle</td>
-                            <td>€2.5</td>
-                        </tr>
-                        <tr>
-                            <td>Cake Pop</td>
-                            <td>Single</td>
-                            <td>Strawberry</td>
-                            <td>Coconut Flakes</td>
-                            <td>€2.5</td>
-                        </tr>
-                        <tr>
-                            <td>Macaron</td>
-                            <td>Box of 6</td>
-                            <td>Pistachio</td>
-                            <td>No Topping</td>
-                            <td>€12</td>
-                        </tr>
-                        <tr>
-                            <td>Macaron</td>
-                            <td>Box of 6</td>
-                            <td>Pistachio</td>
-                            <td>Chocolate Drizzle</td>
-                            <td>€12</td>
-                        </tr>
-                        <tr>
-                            <td>Macaron</td>
-                            <td>Box of 6</td>
-                            <td>Pistachio</td>
-                            <td>Coconut Flakes</td>
-                            <td>€12</td>
-                        </tr>
-                        <tr>
-                            <td>Macaron</td>
-                            <td>Box of 12</td>
-                            <td>Chocolate</td>
-                            <td>No Topping</td>
-                            <td>€22</td>
-                        </tr>
-                        <tr>
-                            <td>Macaron</td>
-                            <td>Box of 12</td>
-                            <td>Chocolate</td>
-                            <td>Chocolate Drizzle</td>
-                            <td>€22</td>
-                        </tr>
-                        <tr>
-                            <td>Macaron</td>
-                            <td>Box of 12</td>
-                            <td>Chocolate</td>
-                            <td>Coconut Flakes</td>
-                            <td>€22</td>
-                        </tr>
-                        <tr>
-                            <td>Easter Egg</td>
-                            <td>500g</td>
-                            <td>Milk Chocolate</td>
-                            <td>Hazelnut Filling</td>
-                            <td>€10</td>
-                        </tr>
-                        <tr>
-                            <td>Easter Egg</td>
-                            <td>500g</td>
-                            <td>Milk Chocolate</td>
-                            <td>Strawberry Filling</td>
-                            <td>€10</td>
-                        </tr>
-                        <tr>
-                            <td>Easter Egg</td>
-                            <td>500g</td>
-                            <td>Milk Chocolate</td>
-                            <td>Caramel Filling</td>
-                            <td>€12</td>
-                        </tr>
-                        <tr>
-                            <td>Easter Egg</td>
-                            <td>1kg</td>
-                            <td>White Chocolate</td>
-                            <td>Hazelnut Filling</td>
-                            <td>€18</td>
-                        </tr>
-                        <tr>
-                            <td>Easter Egg</td>
-                            <td>1kg</td>
-                            <td>White Chocolate</td>
-                            <td>Strawberry Filling</td>
-                            <td>€18</td>
-                        </tr>
-                        <tr>
-                            <td>Easter Egg</td>
-                            <td>1kg</td>
-                            <td>NUttela</td>
-                            <td>Caramel Filling</td>
-                            <td>€20</td>
-                        </tr>
-                        <tr>
-                            <td>Easter Egg</td>
-                            <td>1kg</td>
-                            <td>NUttela</td>
-                            <td>Hazelnut Filling</td>
-                            <td>€18</td>
-                        </tr>
-                        <tr>
-                            <td>Easter Egg</td>
-                            <td>1kg</td>
-                            <td>White Chocolate</td>
-                            <td>Caramel Filling</td>
-                            <td>€20</td>
-                        </tr>
-                        <tr>
-                            <td>Macaron</td>
-                            <td>Box of 6</td>
-                            <td>Lemon</td>
-                            <td>No Topping</td>
-                            <td>€12</td>
-                        </tr>
-                        <tr>
-                            <td>Macaron</td>
-                            <td>Box of 6</td>
-                            <td>Lemon</td>
-                            <td>Chocolate Drizzle</td>
-                            <td>€12</td>
-                        </tr>
-                        <tr>
-                            <td>Macaron</td>
-                            <td>Box of 6</td>
-                            <td>Lemon</td>
-                            <td>Coconut Flakes</td>
-                            <td>€12</td>
-                        </tr>
-                        <tr>
-                            <td>Macaron</td>
-                            <td>Box of 12</td>
-                            <td>Lemon</td>
-                            <td>No Topping</td>
-                            <td>€22</td>
-                        </tr>
-                        <tr>
-                            <td>Macaron</td>
-                            <td>Box of 12</td>
-                            <td>Lemon</td>
-                            <td>Chocolate Drizzle</td>
-                            <td>€22</td>
-                        </tr>
-                        <tr>
-                            <td>Macaron</td>
-                            <td>Box of 12</td>
-                            <td>Lemon</td>
-                            <td>Coconut Flakes</td>
-                            <td>€22</td>
-                        </tr>
-                        <tr>
-                            <td>Macaron</td>
-                            <td>Box of 12</td>
-                            <td>Lemon</td>
-                            <td>No Topping</td>
-                            <td>€22</td>
-                        </tr>
-                        <tr>
-                            <td>Macaron</td>
-                            <td>Box of 12</td>
-                            <td>Lemon</td>
-                            <td>Chocolate Drizzle</td>
-                            <td>€22</td>
-                        </tr>
-                        <tr>
-                            <td>Macaron</td>
-                            <td>Box of 12</td>
-                            <td>Lemon</td>
-                            <td>Coconut Flakes</td>
-                            <td>€22</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th>Product</th>
-                            <th>Available Size</th>
-                            <th>Flavor</th>
-                            <th>Topping</th>
-                            <th>Price</th>
-                        </tr>
-                    </tfoot>
-                </table>
-
+                <div class="table-responsive">
+                    <table id="example" class="table table-striped" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Available Size</th>
+                                <th>Flavor</th>
+                                <th>Topping</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Customized Cake</td>
+                                <td>Small</td>
+                                <td>Chocolate</td>
+                                <td>Ganache</td>
+                                <td>€20</td>
+                            </tr>
+                            <tr>
+                                <td>Customized Cake</td>
+                                <td>Small</td>
+                                <td>Chocolate</td>
+                                <td>Buttercream</td>
+                                <td>€20</td>
+                            </tr>
+                            <tr>
+                                <td>Customized Cake</td>
+                                <td>Small</td>
+                                <td>Chocolate</td>
+                                <td>Whipped Cream</td>
+                                <td>€20</td>
+                            </tr>
+                            <tr>
+                                <td>Customized Cake</td>
+                                <td>Medium</td>
+                                <td>Vanilla</td>
+                                <td>Ganache</td>
+                                <td>€40</td>
+                            </tr>
+                            <tr>
+                                <td>Customized Cake</td>
+                                <td>Medium</td>
+                                <td>Vanilla</td>
+                                <td>Buttercream</td>
+                                <td>€40</td>
+                            </tr>
+                            <tr>
+                                <td>Customized Cake</td>
+                                <td>Medium</td>
+                                <td>Vanilla</td>
+                                <td>Whipped Cream</td>
+                                <td>€40</td>
+                            </tr>
+                            <tr>
+                                <td>Customized Cake</td>
+                                <td>Large</td>
+                                <td>Red Velvet</td>
+                                <td>Cream Cheese</td>
+                                <td>€60</td>
+                            </tr>
+                            <tr>
+                                <td>Customized Cake</td>
+                                <td>Large</td>
+                                <td>Red Velvet</td>
+                                <td>Ganache</td>
+                                <td>€60</td>
+                            </tr>
+                            <tr>
+                                <td>Customized Cake</td>
+                                <td>Large</td>
+                                <td>Red Velvet</td>
+                                <td>Buttercream</td>
+                                <td>€60</td>
+                            </tr>
+                            <tr>
+                                <td>Cupcake</td>
+                                <td>Box of 6</td>
+                                <td>Chocolate</td>
+                                <td>Whipped Cream</td>
+                                <td>€15</td>
+                            </tr>
+                            <tr>
+                                <td>Cupcake</td>
+                                <td>Box of 6</td>
+                                <td>Chocolate</td>
+                                <td>Ganache</td>
+                                <td>€15</td>
+                            </tr>
+                            <tr>
+                                <td>Cupcake</td>
+                                <td>Box of 6</td>
+                                <td>Chocolate</td>
+                                <td>Buttercream</td>
+                                <td>€15</td>
+                            </tr>
+                            <tr>
+                                <td>Cupcake</td>
+                                <td>Box of 12</td>
+                                <td>Vanilla</td>
+                                <td>Whipped Cream</td>
+                                <td>€25</td>
+                            </tr>
+                            <tr>
+                                <td>Cupcake</td>
+                                <td>Box of 12</td>
+                                <td>Vanilla</td>
+                                <td>Ganache</td>
+                                <td>€25</td>
+                            </tr>
+                            <tr>
+                                <td>Cupcake</td>
+                                <td>Box of 12</td>
+                                <td>Vanilla</td>
+                                <td>Buttercream</td>
+                                <td>€25</td>
+                            </tr>
+                            <tr>
+                                <td>Brigadiers</td>
+                                <td>Box of 12</td>
+                                <td>Chocolate</td>
+                                <td>Sprinkles</td>
+                                <td>€10</td>
+                            </tr>
+                            <tr>
+                                <td>Brigadiers</td>
+                                <td>Box of 12</td>
+                                <td>Chocolate</td>
+                                <td>Coconut Flakes</td>
+                                <td>€10</td>
+                            </tr>
+                            <tr>
+                                <td>Brigadiers</td>
+                                <td>Box of 12</td>
+                                <td>Chocolate</td>
+                                <td>Chocolate Chips</td>
+                                <td>€10</td>
+                            </tr>
+                            <tr>
+                                <td>Brigadiers</td>
+                                <td>Box of 24</td>
+                                <td>Vanilla</td>
+                                <td>Sprinkles</td>
+                                <td>€18</td>
+                            </tr>
+                            <tr>
+                                <td>Brigadiers</td>
+                                <td>Box of 24</td>
+                                <td>Vanilla</td>
+                                <td>Coconut Flakes</td>
+                                <td>€18</td>
+                            </tr>
+                            <tr>
+                                <td>Brigadiers</td>
+                                <td>Box of 24</td>
+                                <td>Vanilla</td>
+                                <td>Chocolate Chips</td>
+                                <td>€18</td>
+                            </tr>
+                            <tr>
+                                <td>Cake Pop</td>
+                                <td>Single</td>
+                                <td>Chocolate</td>
+                                <td>Sprinkles</td>
+                                <td>€2</td>
+                            </tr>
+                            <tr>
+                                <td>Cake Pop</td>
+                                <td>Single</td>
+                                <td>Chocolate</td>
+                                <td>White Chocolate Drizzle</td>
+                                <td>€2</td>
+                            </tr>
+                            <tr>
+                                <td>Cake Pop</td>
+                                <td>Single</td>
+                                <td>Chocolate</td>
+                                <td>Coconut Flakes</td>
+                                <td>€2</td>
+                            </tr>
+                            <tr>
+                                <td>Cake Pop</td>
+                                <td>Single</td>
+                                <td>Strawberry</td>
+                                <td>Sprinkles</td>
+                                <td>€2.5</td>
+                            </tr>
+                            <tr>
+                                <td>Cake Pop</td>
+                                <td>Single</td>
+                                <td>Strawberry</td>
+                                <td>White Chocolate Drizzle</td>
+                                <td>€2.5</td>
+                            </tr>
+                            <tr>
+                                <td>Cake Pop</td>
+                                <td>Single</td>
+                                <td>Strawberry</td>
+                                <td>Coconut Flakes</td>
+                                <td>€2.5</td>
+                            </tr>
+                            <tr>
+                                <td>Macaron</td>
+                                <td>Box of 6</td>
+                                <td>Pistachio</td>
+                                <td>No Topping</td>
+                                <td>€12</td>
+                            </tr>
+                            <tr>
+                                <td>Macaron</td>
+                                <td>Box of 6</td>
+                                <td>Pistachio</td>
+                                <td>Chocolate Drizzle</td>
+                                <td>€12</td>
+                            </tr>
+                            <tr>
+                                <td>Macaron</td>
+                                <td>Box of 6</td>
+                                <td>Pistachio</td>
+                                <td>Coconut Flakes</td>
+                                <td>€12</td>
+                            </tr>
+                            <tr>
+                                <td>Macaron</td>
+                                <td>Box of 12</td>
+                                <td>Chocolate</td>
+                                <td>No Topping</td>
+                                <td>€22</td>
+                            </tr>
+                            <tr>
+                                <td>Macaron</td>
+                                <td>Box of 12</td>
+                                <td>Chocolate</td>
+                                <td>Chocolate Drizzle</td>
+                                <td>€22</td>
+                            </tr>
+                            <tr>
+                                <td>Macaron</td>
+                                <td>Box of 12</td>
+                                <td>Chocolate</td>
+                                <td>Coconut Flakes</td>
+                                <td>€22</td>
+                            </tr>
+                            <tr>
+                                <td>Easter Egg</td>
+                                <td>500g</td>
+                                <td>Milk Chocolate</td>
+                                <td>Hazelnut Filling</td>
+                                <td>€10</td>
+                            </tr>
+                            <tr>
+                                <td>Easter Egg</td>
+                                <td>500g</td>
+                                <td>Milk Chocolate</td>
+                                <td>Strawberry Filling</td>
+                                <td>€10</td>
+                            </tr>
+                            <tr>
+                                <td>Easter Egg</td>
+                                <td>500g</td>
+                                <td>Milk Chocolate</td>
+                                <td>Caramel Filling</td>
+                                <td>€12</td>
+                            </tr>
+                            <tr>
+                                <td>Easter Egg</td>
+                                <td>1kg</td>
+                                <td>White Chocolate</td>
+                                <td>Hazelnut Filling</td>
+                                <td>€18</td>
+                            </tr>
+                            <tr>
+                                <td>Easter Egg</td>
+                                <td>1kg</td>
+                                <td>White Chocolate</td>
+                                <td>Strawberry Filling</td>
+                                <td>€18</td>
+                            </tr>
+                            <tr>
+                                <td>Easter Egg</td>
+                                <td>1kg</td>
+                                <td>NUttela</td>
+                                <td>Caramel Filling</td>
+                                <td>€20</td>
+                            </tr>
+                            <tr>
+                                <td>Easter Egg</td>
+                                <td>1kg</td>
+                                <td>NUttela</td>
+                                <td>Hazelnut Filling</td>
+                                <td>€18</td>
+                            </tr>
+                            <tr>
+                                <td>Easter Egg</td>
+                                <td>1kg</td>
+                                <td>White Chocolate</td>
+                                <td>Caramel Filling</td>
+                                <td>€20</td>
+                            </tr>
+                            <tr>
+                                <td>Macaron</td>
+                                <td>Box of 6</td>
+                                <td>Lemon</td>
+                                <td>No Topping</td>
+                                <td>€12</td>
+                            </tr>
+                            <tr>
+                                <td>Macaron</td>
+                                <td>Box of 6</td>
+                                <td>Lemon</td>
+                                <td>Chocolate Drizzle</td>
+                                <td>€12</td>
+                            </tr>
+                            <tr>
+                                <td>Macaron</td>
+                                <td>Box of 6</td>
+                                <td>Lemon</td>
+                                <td>Coconut Flakes</td>
+                                <td>€12</td>
+                            </tr>
+                            <tr>
+                                <td>Macaron</td>
+                                <td>Box of 12</td>
+                                <td>Lemon</td>
+                                <td>No Topping</td>
+                                <td>€22</td>
+                            </tr>
+                            <tr>
+                                <td>Macaron</td>
+                                <td>Box of 12</td>
+                                <td>Lemon</td>
+                                <td>Chocolate Drizzle</td>
+                                <td>€22</td>
+                            </tr>
+                            <tr>
+                                <td>Macaron</td>
+                                <td>Box of 12</td>
+                                <td>Lemon</td>
+                                <td>Coconut Flakes</td>
+                                <td>€22</td>
+                            </tr>
+                            <tr>
+                                <td>Macaron</td>
+                                <td>Box of 12</td>
+                                <td>Lemon</td>
+                                <td>No Topping</td>
+                                <td>€22</td>
+                            </tr>
+                            <tr>
+                                <td>Macaron</td>
+                                <td>Box of 12</td>
+                                <td>Lemon</td>
+                                <td>Chocolate Drizzle</td>
+                                <td>€22</td>
+                            </tr>
+                            <tr>
+                                <td>Macaron</td>
+                                <td>Box of 12</td>
+                                <td>Lemon</td>
+                                <td>Coconut Flakes</td>
+                                <td>€22</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Product</th>
+                                <th>Available Size</th>
+                                <th>Flavor</th>
+                                <th>Topping</th>
+                                <th>Price</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
 
             </div>
         </div>
