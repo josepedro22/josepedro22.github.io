@@ -558,7 +558,7 @@ body {
   }
 
   .vazio {
-    height: 500px;
+    height: 100px;
   }
 
 
@@ -759,6 +759,7 @@ body {
 
 .about-section {
     padding: 3rem 1rem;
+    padding-top: 100px;
 }
 .about-text h2 {
     font-size: 2rem;
@@ -787,23 +788,16 @@ body {
 
 .image-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 15px;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px;
     height: 100%; /* Garantir preenchimento */
 }
-.image-grid .small-image {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 15px;
-}
+
 .image-grid .large-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
-    grid-row: span 2; /* Ocupa duas linhas */
 }
 .image-wrapper {
     position: relative;
@@ -961,10 +955,86 @@ body {
 
 
 
+/*----------------------About Us-------------------------------*/
 
 
 
+.about-image {
+    width: 100%; /* Garante que a imagem ocupe 100% da largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 15px; /* Arredonda as bordas */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    max-width: 100%; /* Garante que a imagem nunca ultrapasse 100% da largura da coluna */
+}
+
+.about-hr {
+    width: 200px; /* Largura da linha horizontal */
+    border: 2px solid #863d3d; /* Cor e espessura */
+}
 
 
+.traco {
+    width: 200px; 
+    border: 2px solid #863d3d;
+}
 
+.about-section h5 {
+    color: #863d3d;
+    font-size: larger;
+}
 
+.accordion-button {
+    color: #863d3d;
+}
+
+/* Cor do botão quando está aberto */
+.accordion-button:not(.collapsed) {
+    background-color: #863d3d61; /* Fundo preto */
+    color: white; /* Texto branco */
+  
+  }
+  
+  /* Remove a borda azul ao abrir */
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+
+  
+  /* Adiciona borda completa para cada item */
+.accordion-item {
+    margin-bottom: 15px; /* Espaçamento entre perguntas */
+    border: 1px solid #ddd; /* Bordas completas */
+    border-radius: 5px; /* Bordas arredondadas */
+    overflow: hidden; /* Evita overflow visual */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombreado */
+  }
+  
+  /* Sobrescreve o estilo do Bootstrap para garantir bordas */
+  .accordion-item:not(:first-child) {
+    border-top: 1px solid #ddd; /* Adiciona borda superior nas perguntas subsequentes */
+  }
+  
+  /* Estiliza o botão */
+  .accordion-button {
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none; /* Remove borda padrão do botão */
+    border-radius: 0; /* Remove arredondamento extra */
+    transition: background-color 0.3s ease;
+  }
+  
+
+  
+  /* Estiliza o corpo do conteúdo */
+  .accordion-body {
+    background-color: #fff;
+    padding: 15px;
+    border-top: 1px solid #ddd; /* Separa conteúdo do cabeçalho */
+  }
+  
+  /* Remove borda duplicada entre o cabeçalho e o corpo */
+  .accordion-button:not(.collapsed) {
+    border-bottom: none;
+  }
