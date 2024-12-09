@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const desktopInitial = 9; // Imagens iniciais no desktop
     const desktopIncrement = 3; // Incremento de imagens no desktop
     const mobileInitial = 6; // Imagens iniciais no mobile
+    const mobileIncrement = 4; // Incremento de imagens no mobile
     let visibleImages = 0; // Número de imagens atualmente visíveis
 
     // Determina quantas imagens mostrar inicialmente com base no dispositivo
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Lógica para carregar mais imagens ao clicar no botão
     function loadMoreImages() {
-        const increment = window.innerWidth > 768 ? desktopIncrement : images.length; // Incremento no desktop ou tudo no mobile
+        const increment = window.innerWidth > 768 ? desktopIncrement : mobileIncrement; // Incremento no desktop ou tudo no mobile
         visibleImages = Math.min(visibleImages + increment, images.length); // Garante que não exceda o total de imagens
         updateImageVisibility();
     }
@@ -57,4 +58,19 @@ document.querySelectorAll('.portfolio-image-wrapper img').forEach(image => {
         const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
         imageModal.show(); // Mostra o modal
     });
+});
+
+  // Fechar o menu ao clicar fora dele
+  document.addEventListener('click', function (event) {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('#navbarNav');
+
+    // Verifica se o menu está aberto e o clique não foi dentro do menu ou no botão de toggle
+    if (navbarCollapse.classList.contains('show') &&
+        !navbarCollapse.contains(event.target) &&
+        !navbarToggler.contains(event.target)) {
+        // Fecha o menu
+        const collapseInstance = bootstrap.Collapse.getInstance(navbarCollapse);
+        collapseInstance.hide();
+    }
 });

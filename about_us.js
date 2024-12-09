@@ -1,8 +1,3 @@
-// Personalização de modais ou comportamento adicional
-document.addEventListener('DOMContentLoaded', () => {
-    console.log("Página carregada. Modais prontos para interação.");
-});
-
   // Fechar o menu ao clicar fora dele
   document.addEventListener('click', function (event) {
     const navbarToggler = document.querySelector('.navbar-toggler');
