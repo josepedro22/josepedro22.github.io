@@ -39,3 +39,47 @@
         collapseInstance.hide();
     }
 });
+
+(() => {
+  'use strict';
+
+  const forms = document.querySelectorAll('.needs-validation');
+
+  Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+          event.preventDefault(); // Prevent default behavior for demonstration
+
+          if (!form.checkValidity()) {
+              // Error popup
+              Swal.fire({
+                  icon: 'error',
+                  title: 'Error!',
+                  text: 'Please fill out all required fields correctly.',
+                  timer: 5000,
+                  showConfirmButton: false,
+                  toast: true,
+                  position: 'top-end'
+              });
+          } else {
+              // Success popup
+              Swal.fire({
+                  icon: 'success',
+                  title: 'Success!',
+                  text: 'Form submitted successfully.',
+                  timer: 3000,
+                  timerProgressBar: true, // Adds progress bar to the timer
+                  showConfirmButton: false,
+                  toast: true,
+                  position: 'top-end',
+                  didClose: () => {
+                      // Reload the page after the popup closes
+                      window.location.reload();
+                      window.scrollTo(0, 0);
+                  }
+              });
+          }
+
+          form.classList.add('was-validated');
+      }, false);
+  });
+})();
