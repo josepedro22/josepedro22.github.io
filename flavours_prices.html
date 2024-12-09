@@ -56,6 +56,12 @@
     <!-- Hero Section -->
     <div class="header">
         <div class="portfolio-hero text-center d-flex flex-column justify-content-center align-items-center">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="home.html" style="color: black; font-size: 200;">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Flavours & Prices</li>
+                </ol>
+            </nav>
             <h1 class="portfolio-title">Flavours & Prices</h1>
             <p class="portfolio-title3">Discover our passion for beautifully decorated, homemade cakes, crafted with
                 care and attention to every detail. In our portfolio, we showcase a variety of unique creations that
@@ -63,7 +69,7 @@
         </div>
     </div>
 
-    
+
     <div class="container my-5">
         <h6 class="portfolio-title2 text-center">Doçaria da Manu</h6>
         <h1 class="portfolio-title text-center">Sweet Creations for Every Occasion</h1>
@@ -75,7 +81,8 @@
                         <img src="photos/cake-icon.png" class="image-modal">
                     </div>
                     <h5 class="card-title">Customized Cakes</h5>
-                    <p class="card-text">Delicious, personalized cakes made to add a sweet and special touch to your celebrations.</p>
+                    <p class="card-text">Delicious, personalized cakes made to add a sweet and special touch to your
+                        celebrations.</p>
                     <button class="btn btn-circle" data-bs-toggle="modal" data-bs-target="#modalCake">+</button>
                 </div>
             </div>
@@ -86,7 +93,8 @@
                         <img src="photos/cupcake.png" class="image-modal">
                     </div>
                     <h5 class="card-title">Cupcakes</h5>
-                    <p class="card-text">Miniature delights with a burst of flavor, perfect for any occasion or as a sweet treat.</p>
+                    <p class="card-text">Miniature delights with a burst of flavor, perfect for any occasion or as a
+                        sweet treat.</p>
                     <button class="btn btn-circle" data-bs-toggle="modal" data-bs-target="#modalCupcake">+</button>
                 </div>
             </div>
@@ -94,11 +102,13 @@
             <div class="col-md-4">
                 <div class="custom-card">
                     <div class="icon-wrapper">
-                        <img src="photos/brigadeiro-icon-vector-brazilian-sweet-brigadier-design-illustration-700-221364712-removebg-preview (1).png" class="image-modal">
+                        <img src="photos/brigadeiro-icon-vector-brazilian-sweet-brigadier-design-illustration-700-221364712-removebg-preview (1).png"
+                            class="image-modal">
                     </div>
                     <h5 class="card-title">Brigadiers</h5>
-                    <p class="card-text">Classic Brazilian chocolate truffles that melt in your mouth and are perfect for every event..</p>
-                    <button class="btn btn-circle" data-bs-toggle="modal" data-bs-target="#modalCupcake">+</button>
+                    <p class="card-text">Classic Brazilian chocolate truffles that melt in your mouth and are perfect
+                        for every event..</p>
+                    <button class="btn btn-circle" data-bs-toggle="modal" data-bs-target="#modalBrigadier">+</button>
                 </div>
             </div>
             <!-- Cartão 4 -->
@@ -108,7 +118,8 @@
                         <img src="photos/Cake-Pop.png" class="image-modal">
                     </div>
                     <h5 class="card-title">Cake Pops</h5>
-                    <p class="card-text">Bite-sized cakes on a stick, bringing fun and flavor together in every bite.</p>
+                    <p class="card-text">Bite-sized cakes on a stick, bringing fun and flavor together in every bite.
+                    </p>
                     <button class="btn btn-circle" data-bs-toggle="modal" data-bs-target="#modalCakePop">+</button>
                 </div>
             </div>
@@ -119,7 +130,8 @@
                         <img src="photos/macarons.png" class="image-modal">
                     </div>
                     <h5 class="card-title">Macarons</h5>
-                    <p class="card-text">Colorful and elegant French almond cookies filled with creamy, flavorful fillings.</p>
+                    <p class="card-text">Colorful and elegant French almond cookies filled with creamy, flavorful
+                        fillings.</p>
                     <button class="btn btn-circle" data-bs-toggle="modal" data-bs-target="#modalMacaron">+</button>
                 </div>
             </div>
@@ -130,42 +142,452 @@
                         <img src="photos/easter-egg.png" class="image-modal">
                     </div>
                     <h5 class="card-title">Easter Eggs</h5>
-                    <p class="card-text">Handcrafted chocolate eggs, beautifully designed to make your Easter celebrations unforgettable.</p>
-                    <button class="btn btn-circle" data-bs-toggle="modal" data-bs-target="#modalMacaron">+</button>
+                    <p class="card-text">Handcrafted chocolate eggs, beautifully designed to make your Easter
+                        celebrations unforgettable.</p>
+                    <button class="btn btn-circle" data-bs-toggle="modal" data-bs-target="#modalEasterEgg">+</button>
                 </div>
             </div>
             <!-- Adicione mais cartões aqui -->
         </div>
     </div>
 
-    <!-- Modais -->
-    <div class="modal fade" id="modalMacaron" tabindex="-1" aria-labelledby="modalMacaronLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalPinturaLabel">Detalhes sobre Pintura</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                </div>
+
+    <!-- Modal Customized Cakes -->
+    <div class="modal fade" id="modalCake" tabindex="-1" aria-labelledby="modalCakeLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-custom modal_flavours">
+
                 <div class="modal-body">
-                    Workshops de pintura para explorar diferentes técnicas artísticas e criar obras únicas.
+                    <div class="modal-header mb-4">
+                        <h3 class="modal-title fw-bold">Customized Cakes</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="row g-4">
+                        <!-- Coluna da Imagem -->
+                        <div class="col-12 col-md-5 d-flex justify-content-center align-items-center">
+                            <div class="image-container w-100">
+                                <img src="photos/cake1.JPEG" alt="Descrição da imagem" class="img-fluid rounded">
+                            </div>
+                        </div>
+                        <!-- Coluna do Texto -->
+                        <div class="col-12 col-md-7">
+                            <h5 class="fw-bold">Available Sizes</h5>
+                            <li><strong>Size S</strong> (10-12 slices)</li>
+                            <li><strong>Size M</strong> (15-17 slices)</li>
+                            <li><strong>Size L</strong> (20-22 slices)</li>
+                            <h5 class="fw-bold mt-4">Flavours</h5>
+                            <li>Chocolate</li>
+                            <li>Vanilla</li>
+                            <li>Red Velvet</li>
+                            <li>Lemon</li>
+                            <li>Carrot</li>
+                            <a href="contact_us.html" id="see-more-btn" class="btn see-more-btn btn-primary mt-5"
+                                style="display: block; margin: 0 auto; text-align: center;">Request now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Modal Cupcake -->
     <div class="modal fade" id="modalCupcake" tabindex="-1" aria-labelledby="modalCupcakeLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalCrocheLabel">Detalhes sobre Crochê</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                </div>
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-custom modal_flavours">
+
                 <div class="modal-body">
-                    Aprenda a criar peças únicas com técnicas de crochê.
+                    <div class="modal-header mb-4">
+                        <h3 class="modal-title fw-bold">Cupcakes</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="row g-4">
+                        <!-- Coluna da Imagem -->
+                        <div class="col-12 col-md-5 d-flex justify-content-center align-items-center">
+                            <div class="image-container w-100">
+                                <img src="photos/cupcake.jpg" alt="Descrição da imagem" class="img-fluid rounded">
+                            </div>
+                        </div>
+                        <!-- Coluna do Texto -->
+                        <div class="col-12 col-md-7">
+                            <ul class="nav nav-tabs mt-4" id="CupCakesTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="sizes-tab4" data-bs-toggle="tab"
+                                        data-bs-target="#sizes4" type="button" role="tab" aria-controls="sizes4"
+                                        aria-selected="true">
+                                        Available Sizes
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="flavours-tab4" data-bs-toggle="tab"
+                                        data-bs-target="#flavours4" type="button" role="tab" aria-controls="flavours4"
+                                        aria-selected="true">
+                                        Flavours
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="toppings-tab4" data-bs-toggle="tab"
+                                        data-bs-target="#toppings4" type="button" role="tab" aria-controls="toppings4"
+                                        aria-selected="false">
+                                        Toppings
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content mt-3" id="cupcakeTabsContent">
+                                <div class="tab-pane fade show active" id="sizes4" role="tabpanel"
+                                    aria-labelledby="sizes-tab4">
+                                    <ul>
+                                        <li><strong>Box of 6</strong> - 10€</li>
+                                        <li><strong>Box of 12</strong> - 17€</li>
+                                        <li><strong>Box of 20</strong> - 23€ </li>
+                                    </ul>
+                                </div>
+                                <!-- Tab Flavours -->
+                                <div class="tab-pane fade" id="flavours4" role="tabpanel" aria-labelledby="flavours-tab4">
+                                    <ul>
+                                        <li>Chocolate</li>
+                                        <li>Vanilla</li>
+                                        <li>Red Velvet</li>
+                                        <li>Lemon</li>
+                                        <li>Carrot</li>
+                                    </ul>
+                                </div>
+                                <!-- Tab Toppings -->
+                                <div class="tab-pane fade" id="toppings4" role="tabpanel" aria-labelledby="toppings-tab4">
+                                    <ul>
+                                        <li>Chocolate</li>
+                                        <li>Sprinkles</li>
+                                        <li>Whipped Cream</li>
+                                        <li>Chocolate Chips</li>
+                                        <li>Caramel Sauce</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Modal Brigadiers -->
+    <div class="modal fade" id="modalBrigadier" tabindex="-1" aria-labelledby="modalBrigadierLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-custom modal_flavours">
+
+                <div class="modal-body">
+                    <div class="modal-header mb-4">
+                        <h3 class="modal-title fw-bold">Brigadiers</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="row g-4">
+                        <!-- Coluna da Imagem -->
+                        <div class="col-12 col-md-5 d-flex justify-content-center align-items-center">
+                            <div class="image-container w-100">
+                                <img src="photos/cake1.JPEG" alt="Descrição da imagem" class="img-fluid rounded">
+                            </div>
+                        </div>
+                        <!-- Coluna do Texto -->
+                        <div class="col-12 col-md-7">
+                            <ul class="nav nav-tabs mt-4" id="BrigadiersTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="sizes-tab3" data-bs-toggle="tab"
+                                        data-bs-target="#sizes3" type="button" role="tab" aria-controls="sizes3"
+                                        aria-selected="true">
+                                        Sizes
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="flavours-tab3" data-bs-toggle="tab"
+                                        data-bs-target="#flavours3" type="button" role="tab" aria-controls="flavours3"
+                                        aria-selected="true">
+                                        Flavours
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="toppings-tab3" data-bs-toggle="tab"
+                                        data-bs-target="#toppings3" type="button" role="tab" aria-controls="toppings3"
+                                        aria-selected="false">
+                                        Toppings
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content mt-3" id="cupcakeTabsContent">
+                                <div class="tab-pane fade show active" id="sizes3" role="tabpanel"
+                                    aria-labelledby="sizes-tab3">
+                                    <ul>
+                                        <li><strong>Box of 6</strong> - 10€</li>
+                                        <li><strong>Box of 12</strong> - 17€</li>
+                                        <li><strong>Box of 20</strong> - 23€ </li>
+                                    </ul>
+                                </div>
+                                <!-- Tab Flavours -->
+                                <div class="tab-pane fade" id="flavours3" role="tabpanel" aria-labelledby="flavours-tab3">
+                                    <ul>
+                                        <li>Chocolate</li>
+                                        <li>Vanilla</li>
+                                        <li>Red Velvet</li>
+                                        <li>Lemon</li>
+                                        <li>Carrot</li>
+                                    </ul>
+                                </div>
+                                <!-- Tab Toppings -->
+                                <div class="tab-pane fade" id="toppings3" role="tabpanel" aria-labelledby="toppings-tab3">
+                                    <ul>
+                                        <li>Chocolate</li>
+                                        <li>Sprinkles</li>
+                                        <li>Whipped Cream</li>
+                                        <li>Chocolate Chips</li>
+                                        <li>Caramel Sauce</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Cake Pops -->
+    <div class="modal fade" id="modalCakePop" tabindex="-1" aria-labelledby="modalCakePopLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-custom modal_flavours">
+
+                <div class="modal-body">
+                    <div class="modal-header mb-4">
+                        <h3 class="modal-title fw-bold">Cake Pops</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="row g-4">
+                        <!-- Coluna da Imagem -->
+                        <div class="col-12 col-md-5 d-flex justify-content-center align-items-center">
+                            <div class="image-container w-100">
+                                <img src="photos/cake1.JPEG" alt="Descrição da imagem" class="img-fluid rounded">
+                            </div>
+                        </div>
+                        <!-- Coluna do Texto -->
+                        <div class="col-12 col-md-7">
+                            <ul class="nav nav-tabs mt-4" id="CakerPopsTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="sizes-tab2" data-bs-toggle="tab"
+                                        data-bs-target="#sizes2" type="button" role="tab" aria-controls="sizes2"
+                                        aria-selected="true">
+                                        Sizes
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="flavours-tab2" data-bs-toggle="tab"
+                                        data-bs-target="#flavours2" type="button" role="tab" aria-controls="flavours2"
+                                        aria-selected="true">
+                                        Flavours
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="toppings-tab2" data-bs-toggle="tab"
+                                        data-bs-target="#toppings2" type="button" role="tab" aria-controls="toppings2"
+                                        aria-selected="false">
+                                        Toppings
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content mt-3" id="cupcakeTabsContent">
+                                <div class="tab-pane fade show active" id="sizes2" role="tabpanel"
+                                    aria-labelledby="sizes-tab2">
+                                    <ul>
+                                        <li><strong>Box of 6</strong> - 10€</li>
+                                        <li><strong>Box of 12</strong> - 17€</li>
+                                        <li><strong>Box of 20</strong> - 23€ </li>
+                                    </ul>
+                                </div>
+                                <!-- Tab Flavours -->
+                                <div class="tab-pane fade" id="flavours2" role="tabpanel" aria-labelledby="flavours-tab2">
+                                    <ul>
+                                        <li>Chocolate</li>
+                                        <li>Vanilla</li>
+                                        <li>Red Velvet</li>
+                                        <li>Lemon</li>
+                                        <li>Carrot</li>
+                                    </ul>
+                                </div>
+                                <!-- Tab Toppings -->
+                                <div class="tab-pane fade" id="toppings2" role="tabpanel" aria-labelledby="toppings-tab2">
+                                    <ul>
+                                        <li>Chocolate</li>
+                                        <li>Sprinkles</li>
+                                        <li>Whipped Cream</li>
+                                        <li>Chocolate Chips</li>
+                                        <li>Caramel Sauce</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Macarons -->
+    <div class="modal fade" id="modalMacaron" tabindex="-1" aria-labelledby="modalMacaronLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-custom modal_flavours">
+
+                <div class="modal-body">
+                    <div class="modal-header mb-4">
+                        <h3 class="modal-title fw-bold">Macarons</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="row g-4">
+                        <!-- Coluna da Imagem -->
+                        <div class="col-12 col-md-5 d-flex justify-content-center align-items-center">
+                            <div class="image-container w-100">
+                                <img src="photos/cake1.JPEG" alt="Descrição da imagem" class="img-fluid rounded">
+                            </div>
+                        </div>
+                        <!-- Coluna do Texto -->
+                        <div class="col-12 col-md-7">
+                            <ul class="nav nav-tabs mt-4" id="MacaronsTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="sizes-tab" data-bs-toggle="tab"
+                                        data-bs-target="#sizes" type="button" role="tab" aria-controls="sizes"
+                                        aria-selected="true">
+                                        Sizes
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="flavours-tab" data-bs-toggle="tab"
+                                        data-bs-target="#flavours" type="button" role="tab" aria-controls="flavours"
+                                        aria-selected="true">
+                                        Flavours
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="toppings-tab" data-bs-toggle="tab"
+                                        data-bs-target="#toppings" type="button" role="tab" aria-controls="toppings"
+                                        aria-selected="false">
+                                        Toppings
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content mt-3" id="cupcakeTabsContent">
+                                <div class="tab-pane fade show active" id="sizes" role="tabpanel"
+                                    aria-labelledby="sizes-tab">
+                                    <ul>
+                                        <li><strong>Box of 6</strong> - 10€</li>
+                                        <li><strong>Box of 12</strong> - 17€</li>
+                                        <li><strong>Box of 20</strong> - 23€ </li>
+                                    </ul>
+                                </div>
+                                <!-- Tab Flavours -->
+                                <div class="tab-pane fade" id="flavours" role="tabpanel" aria-labelledby="flavours-tab">
+                                    <ul>
+                                        <li>Chocolate</li>
+                                        <li>Vanilla</li>
+                                        <li>Red Velvet</li>
+                                        <li>Lemon</li>
+                                        <li>Carrot</li>
+                                    </ul>
+                                </div>
+                                <!-- Tab Toppings -->
+                                <div class="tab-pane fade" id="toppings" role="tabpanel" aria-labelledby="toppings-tab">
+                                    <ul>
+                                        <li>Chocolate</li>
+                                        <li>Sprinkles</li>
+                                        <li>Whipped Cream</li>
+                                        <li>Chocolate Chips</li>
+                                        <li>Caramel Sauce</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Easter Eggs -->
+    <div class="modal fade" id="modalEasterEgg" tabindex="-1" aria-labelledby="modalEasterEggLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-custom modal_flavours">
+
+                <div class="modal-body">
+                    <div class="modal-header mb-4">
+                        <h3 class="modal-title fw-bold">Easter Eggs</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="row g-4">
+                        <!-- Coluna da Imagem -->
+                        <div class="col-12 col-md-5 d-flex justify-content-center align-items-center">
+                            <div class="image-container w-100">
+                                <img src="photos/cake1.JPEG" alt="Descrição da imagem" class="img-fluid rounded">
+                            </div>
+                        </div>
+                        <!-- Coluna do Texto -->
+                        <div class="col-12 col-md-7">
+
+                            <!-- Tabs para Flavours e Toppings -->
+
+                            <ul class="nav nav-tabs mt-4" id="EasterEggsTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="sizes-tab1" data-bs-toggle="tab"
+                                        data-bs-target="#sizes1" type="button" role="tab" aria-controls="sizes1"
+                                        aria-selected="true">
+                                        Sizes
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="flavours-tab1" data-bs-toggle="tab"
+                                        data-bs-target="#flavours1" type="button" role="tab" aria-controls="flavours1"
+                                        aria-selected="true">
+                                        Flavours
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="toppings-tab1" data-bs-toggle="tab"
+                                        data-bs-target="#toppings1" type="button" role="tab" aria-controls="toppings1"
+                                        aria-selected="false">
+                                        Toppings
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content mt-3" id="cupcakeTabsContent">
+                                <div class="tab-pane fade show active" id="sizes1" role="tabpanel"
+                                    aria-labelledby="sizes-tab1">
+                                    <ul>
+                                        <li><strong>Box of 6</strong> - 10€</li>
+                                        <li><strong>Box of 12</strong> - 17€</li>
+                                        <li><strong>Box of 20</strong> - 23€ </li>
+                                    </ul>
+                                </div>
+                                <!-- Tab Flavours -->
+                                <div class="tab-pane fade" id="flavours1" role="tabpanel" aria-labelledby="flavours-tab1">
+                                    <ul>
+                                        <li>Chocolate</li>
+                                        <li>Vanilla</li>
+                                        <li>Red Velvet</li>
+                                        <li>Lemon</li>
+                                        <li>Carrot</li>
+                                    </ul>
+                                </div>
+                                <!-- Tab Toppings -->
+                                <div class="tab-pane fade" id="toppings1" role="tabpanel" aria-labelledby="toppings-tab1">
+                                    <ul>
+                                        <li>Chocolate</li>
+                                        <li>Sprinkles</li>
+                                        <li>Whipped Cream</li>
+                                        <li>Chocolate Chips</li>
+                                        <li>Caramel Sauce</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="text-center mt-3">
         <a href="price_list.html" class="btn contact-btn">See the Price List</a>
@@ -195,9 +617,9 @@
                 <div class="col-md-4 footer-col-3">
                     <h5>Access Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Flavours & Prices</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="contact_us.html">Contact</a></li>
+                        <li><a href="flavours_prices.html">Flavours & Prices</a></li>
                     </ul>
                 </div>
                 <img src="photos/logo2.png" alt="Logo" class="footer-logo-rounded ">
